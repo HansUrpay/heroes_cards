@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+header {
+  font-size: 1.5rem;
+  background-color: #d1891c;
+  padding: 0 3vw;
+}
+
+h2,
+h1 {
+  font-weight: normal;
+}
+
+.titulo-principal {
+  background-color: #00669f;
+  color: #ffffff;
+  margin-bottom: 10vh;
+  padding: 3vh 0 3vh 3vw;
+  font-size: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.img-superior {
+  width: 100%;
+}
+
+.personaje {
+  position: absolute;
+  top: 170px;
+}
+
+.card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 620px;
+  width: 350px;
+  margin-bottom: 1.5vh;
+  border-radius: 15px 15px 0 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #f3f3f3;
+}
+
+i {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  color: #cc2424;
+}
+
+.texto-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-grow: 0.6;
+}
+
+.texto-card > p {
+  padding: 0 16px 20px;
+}
+
+.boton {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #00669f;
+  padding: 0.8rem 2.2rem;
+  border-radius: 3px;
+}
+
