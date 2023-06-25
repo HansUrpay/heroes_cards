@@ -8,24 +8,41 @@
 }
 
 header {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   background-color: #1cd1b0;
-  padding: 0 3vw;
+  padding: 0.2vw 2vw;
 }
 
-h2,
-h1 {
-  font-weight: normal;
-}
-
-.titulo-principal {
+.titulo-principal,
+.navbar {
   background-color: #00669f;
   color: #ffffff;
-  padding: 1vh 0 1vh 3vw;
   font-size: 2rem;
   position: sticky;
   top: 0;
   z-index: 1;
+}
+
+h1, .navbar {
+  padding: 1vh 1.5vw;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+}
+
+h1 > img {
+  margin-right: 2.5vw;
+}
+
+.navbar {
+  background-color: #001d2d;
+  font-size: 1rem;
+  justify-content: flex-end;
+}
+
+.navbar li {
+  display: inline;
+  margin-left: 2%;
 }
 
 main {
@@ -98,6 +115,18 @@ i {
   background-color: #00669f;
   padding: 0.8rem 2.2rem;
   border-radius: 3px;
+}
+
+.icono-mas {
+  position: fixed;
+  right: 2%;
+  bottom: 12%;
+  font-size: 3.5rem;
+  background-color: #00669f;
+  border-radius: 50%;
+  color: #ffffff;
+  padding: 0 20px;
+  text-decoration: none;
 }
 
 footer {

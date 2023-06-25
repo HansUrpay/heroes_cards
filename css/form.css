@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&display=swap");
+
+* {
+  font-family: Karla, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: unset;
+  display: block;
+}
+
+.container-form {
+  width: 59%;
+  margin: 3vw auto;
+  padding: 1vw 3vw;
+  background-color: #00669f;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  border-radius: 49px;
+}
+
+.container-form > h2 {
+  font-size: 40px;
+  line-height: 5vw;
+  text-align: center;
+}
+
+.container-form > h3 {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 14px;
+  text-align: center;
+  line-height: 20px;
+}
+
+form {
+  font-weight: 300;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.bloques {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.campos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 48%;
+  min-width: 205px;
+}
+
+label {
+  font-size: 20px;
+}
+
+.campos div {
+  display: flex;
+  flex-direction: column;
+  margin: 1vw 0;
+}
+
+input,
+select,
+textarea {
+  outline: none;
+  border: none;
+  border-radius: 15px;
+}
+
+#nombre,
+#fecha,
+#especie {
+  font-size: 20px;
+  margin: 1vw 0;
+  width: 23vw;
+  height: 4vw;
+  padding: 8px;
+  min-width: 200px;
+  min-height: 40px;
+}
+
+#fecha {
+  font-size: 15px;
+}
+
+#imagen {
+  border-radius: unset;
+  margin: 2vw 0;
+  font-size: 15px;
+}
+
+textarea {
+  resize: none;
+  width: 23vw;
+  height: 20vw;
+  margin: 15px 0;
+  padding: 15px;
+  min-width: 200px;
+  min-height: 150px;
+}
+
+textarea::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+}
+
+#boton {
+  width: 31vw;
+  height: 8vh;
+  min-width: 200px;
+  margin-top: 25px;
+  background: #1cd1b0;
+  font-size: 40px;
+  font-weight: 700;
+  border-radius: 23px;
+}
+
+.poder-tipo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 185px;
+  height: 20.5vw;
+}
+
+.campos .poder,
+.campos .tipo {
+  flex: 0.6;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.tipo label,
+.poder label {
+  font-size: 16px;
+}
+
+.poder input,
+.tipo input {
+  margin-right: 5px;
+  vertical-align: middle;
+  min-width: 15px;
+  min-height: 15px;
+  width: 1.8vw;
+  height: 1.8vw;
+}
+
+.campos .tipo {
+  flex: 0.3;
+}
+
+.tipo p,
+.poder p {
+  font-size: 20px;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 860px) {
+  .container-form > h2{
+    line-height: 8vw;
+  }
+
+  .bloques {
+    justify-content: center;
+  }
+
+  .campos {
+    width: 100%;
+  }
+
+  #nombre,
+  #fecha,
+  #especie,
+  textarea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 581px) {
+  .container-form > h2 {
+    padding: 10px;
+    line-height: 7vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-form {
+    width: 80%;
+  }
+
+  .container-form > h2 {
+    margin: 20px 0;
+  }
+
+  .container-form > h3 {
+    line-height: 22px;
+  }
+
+  .tipo label,
+  .poder label {
+    margin: 3px 0;
+  }
+
+  hr {
+    margin: 5px 0;
+  }
+}
