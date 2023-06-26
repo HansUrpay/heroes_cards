@@ -105,6 +105,7 @@ textarea {
 }
 
 textarea {
+  font-size: 20px;
   resize: none;
   width: 23vw;
   height: 20vw;
@@ -169,10 +170,32 @@ textarea::placeholder {
   font-size: 20px;
 }
 
+/* PSEUDO-CLASE */
+.container-form > h2:hover {
+  color: #bdbcbc;
+  transform: scale(1.1);
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+  color: #989797;
+}
+
+#imagen:hover,
+.poder-tipo label:hover {
+  color: #000;
+}
+
+#boton:hover {
+  color: #fff;
+  background-color: #001d2d;
+}
+
 /* MEDIA QUERY */
 
 @media (max-width: 860px) {
-  .container-form > h2{
+  .container-form > h2 {
     line-height: 8vw;
   }
 

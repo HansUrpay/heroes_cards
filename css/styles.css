@@ -23,7 +23,8 @@ header {
   z-index: 1;
 }
 
-h1, .navbar {
+h1,
+.navbar {
   padding: 1vh 1.5vw;
   font-weight: normal;
   display: flex;
@@ -32,6 +33,10 @@ h1, .navbar {
 
 h1 > img {
   margin-right: 2.5vw;
+}
+
+.titulo-principal a:hover {
+  transform: scale(1.1);
 }
 
 .navbar {
@@ -127,6 +132,10 @@ i {
   color: #ffffff;
   padding: 0 20px;
   text-decoration: none;
+}
+
+.icono-mas:hover{
+  background-color: #001d2d;
 }
 
 footer {
