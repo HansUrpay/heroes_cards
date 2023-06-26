@@ -225,6 +225,7 @@ textarea:hover {
 @media (max-width: 480px) {
   .container-form {
     width: 80%;
+    border-radius: 30px;
   }
 
   .container-form > h2 {
