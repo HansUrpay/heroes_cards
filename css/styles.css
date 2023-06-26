@@ -134,7 +134,7 @@ i {
   text-decoration: none;
 }
 
-.icono-mas:hover{
+.icono-mas:hover {
   background-color: #001d2d;
 }
 
@@ -159,17 +159,9 @@ footer {
   font-weight: bold;
 }
 
-@media (max-width: 480px) {
-  .img-superman {
-    background-image: url("../img/superman_2.svg");
-  }
-
-  .card-4 {
-    display: none;
-  }
-
-  .texto-footer-2 {
-    margin: 0 2vh;
+@media (max-width: 1200px) {
+  main {
+    padding: 5vh 0;
   }
 }
 
@@ -191,8 +183,28 @@ footer {
   }
 }
 
-@media (max-width: 1200px) {
-  main {
-    padding: 5vh 0;
+@media (max-width: 480px) {
+  .img-superman {
+    background-image: url("../img/superman_2.svg");
+  }
+
+  .card-4 {
+    display: none;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .texto-footer-1 {
+    margin-left: 0;
+  }
+
+  .texto-footer-2 {
+    margin: 0 2vh;
+  }
+
+  .icono-mas {
+    bottom: 14%;
   }
 }
